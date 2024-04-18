@@ -26,7 +26,7 @@ if (process.env.NODE_ENV !== "development") {
   sessionOptions.cookie = {
     sameSite: "none",
     secure: true,
-    // domain: process.env.HTTP_SERVER_DOMAIN,
+    domain: "https://a6-kanbas-node-server-app-fcjc.onrender.com",
   };
 }
 app.use(session(sessionOptions));
